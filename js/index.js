@@ -51,3 +51,8 @@ mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]
 
 // NAV
 
+// let headerLinks = document.querySelectorAll("nav");
+// console.log(headerLinks);
+
+let headerLinks = document.querySelectorAll("a");
+headerLinks.textContent = siteContent["nav"]["a"];
