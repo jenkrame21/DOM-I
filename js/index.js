@@ -66,6 +66,8 @@ headerLinks[5].textContent = siteContent.nav["nav-item-6"]
 let mainHeader = document.querySelector(".cta-text h1");
 mainHeader.textContent = siteContent.cta.h1;
 
+mainHeader.innerHTML = "DOM<br> Is<br> Awesome";
+
 // Button
 
 let mainButton = document.querySelector(".cta-text button");
@@ -97,3 +99,25 @@ let mainBotParas = document.querySelectorAll(".bottom-content .text-content p");
 mainBotParas[0].textContent = siteContent["main-content"]["services-content"];
 mainBotParas[1].textContent = siteContent["main-content"]["product-content"];
 mainBotParas[2].textContent = siteContent["main-content"]["vision-content"];
+
+// Contact ------------
+// Header
+
+const contactHeader = document.querySelector(".contact h4");
+contactHeader.textContent = siteContent.contact["contact-h4"];
+
+// Paragraphs
+
+const contactInfo = document.querySelectorAll(".contact p");
+contactInfo[0].textContent = siteContent.contact["address"];
+contactInfo[1].textContent = siteContent.contact["phone"];
+contactInfo[2].textContent = siteContent.contact["email"];
+
+contactInfo[0].innerHTML = "123 Way 456 Street<br> Somewhere, USA"
+
+// Copyright ----------
+
+const footerCopyright = document.querySelector("footer p");
+footerCopyright.textContent = siteContent.footer["copyright"];
+
+// I'm so proud of myself, it's silly. I had help in the beginning but everything else, I figured out on my own!!!
