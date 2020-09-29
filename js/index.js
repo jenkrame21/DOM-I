@@ -60,6 +60,26 @@ headerLinks[3].textContent = siteContent.nav["nav-item-4"]
 headerLinks[4].textContent = siteContent.nav["nav-item-5"]
 headerLinks[5].textContent = siteContent.nav["nav-item-6"]
 
+headerLinks[0].style.color = "green";
+headerLinks[1].style.color = "green";
+headerLinks[2].style.color = "green";
+headerLinks[3].style.color = "green";
+headerLinks[4].style.color = "green";
+headerLinks[5].style.color = "green";
+
+let parent = document.querySelector("nav")
+let newLink1 = document.createElement("a");
+newLink1.textContent = "Blog";
+newLink1.href = "#";
+let newLink2 = document.createElement("a");
+newLink2.textContent = "Team";
+newLink2.href = "#";
+parent.appendChild(newLink1);
+parent.prepend(newLink2);
+
+newLink1.style.color = "green";
+newLink2.style.color = "green";
+
 // CTA ----------------
 // Header
 
