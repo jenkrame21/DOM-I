@@ -39,7 +39,8 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 
-// IMAGES
+// IMAGES -------------
+
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
@@ -70,4 +71,29 @@ mainHeader.textContent = siteContent.cta.h1;
 let mainButton = document.querySelector(".cta-text button");
 mainButton.textContent = siteContent.cta.button;
 
+// Main-Content --------
+// Top Headers 
 
+let mainTopHeaders = document.querySelectorAll(".top-content .text-content h4");
+mainTopHeaders[0].textContent = siteContent["main-content"]["features-h4"];
+mainTopHeaders[1].textContent = siteContent["main-content"]["about-h4"];
+
+// Bottom Headers 
+
+let mainBotHeaders = document.querySelectorAll(".bottom-content .text-content h4");
+mainBotHeaders[0].textContent = siteContent["main-content"]["services-h4"];
+mainBotHeaders[1].textContent = siteContent["main-content"]["product-h4"];
+mainBotHeaders[2].textContent = siteContent["main-content"]["vision-h4"];
+
+// Top Paragraphs
+
+let mainTopParas = document.querySelectorAll(".top-content .text-content p");
+mainTopParas[0].textContent = siteContent["main-content"]["features-content"];
+mainTopParas[1].textContent = siteContent["main-content"]["about-content"];
+
+// Bottom Paragraphs
+
+let mainBotParas = document.querySelectorAll(".bottom-content .text-content p");
+mainBotParas[0].textContent = siteContent["main-content"]["services-content"];
+mainBotParas[1].textContent = siteContent["main-content"]["product-content"];
+mainBotParas[2].textContent = siteContent["main-content"]["vision-content"];
