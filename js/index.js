@@ -38,5 +38,106 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+// IMAGES -------------
+
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let headerImg = document.getElementById("cta-img");
+headerImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+let mainContentImg = document.getElementById("middle-img");
+mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+// NAV ----------------
+
+let headerLinks = document.querySelectorAll("nav a");
+headerLinks[0].textContent = siteContent.nav["nav-item-1"]
+headerLinks[1].textContent = siteContent.nav["nav-item-2"]
+headerLinks[2].textContent = siteContent.nav["nav-item-3"]
+headerLinks[3].textContent = siteContent.nav["nav-item-4"]
+headerLinks[4].textContent = siteContent.nav["nav-item-5"]
+headerLinks[5].textContent = siteContent.nav["nav-item-6"]
+
+headerLinks[0].style.color = "green";
+headerLinks[1].style.color = "green";
+headerLinks[2].style.color = "green";
+headerLinks[3].style.color = "green";
+headerLinks[4].style.color = "green";
+headerLinks[5].style.color = "green";
+
+let parent = document.querySelector("nav")
+let newLink1 = document.createElement("a");
+newLink1.textContent = "Blog";
+newLink1.href = "#";
+let newLink2 = document.createElement("a");
+newLink2.textContent = "Team";
+newLink2.href = "#";
+parent.appendChild(newLink1);
+parent.prepend(newLink2);
+
+newLink1.style.color = "green";
+newLink2.style.color = "green";
+
+// CTA ----------------
+// Header
+
+let mainHeader = document.querySelector(".cta-text h1");
+mainHeader.textContent = siteContent.cta.h1;
+
+mainHeader.innerHTML = "DOM<br> Is<br> Awesome";
+
+// Button
+
+let mainButton = document.querySelector(".cta-text button");
+mainButton.textContent = siteContent.cta.button;
+
+// Main-Content --------
+// Top Headers 
+
+let mainTopHeaders = document.querySelectorAll(".top-content .text-content h4");
+mainTopHeaders[0].textContent = siteContent["main-content"]["features-h4"];
+mainTopHeaders[1].textContent = siteContent["main-content"]["about-h4"];
+
+// Bottom Headers 
+
+let mainBotHeaders = document.querySelectorAll(".bottom-content .text-content h4");
+mainBotHeaders[0].textContent = siteContent["main-content"]["services-h4"];
+mainBotHeaders[1].textContent = siteContent["main-content"]["product-h4"];
+mainBotHeaders[2].textContent = siteContent["main-content"]["vision-h4"];
+
+// Top Paragraphs
+
+let mainTopParas = document.querySelectorAll(".top-content .text-content p");
+mainTopParas[0].textContent = siteContent["main-content"]["features-content"];
+mainTopParas[1].textContent = siteContent["main-content"]["about-content"];
+
+// Bottom Paragraphs
+
+let mainBotParas = document.querySelectorAll(".bottom-content .text-content p");
+mainBotParas[0].textContent = siteContent["main-content"]["services-content"];
+mainBotParas[1].textContent = siteContent["main-content"]["product-content"];
+mainBotParas[2].textContent = siteContent["main-content"]["vision-content"];
+
+// Contact ------------
+// Header
+
+const contactHeader = document.querySelector(".contact h4");
+contactHeader.textContent = siteContent.contact["contact-h4"];
+
+// Paragraphs
+
+const contactInfo = document.querySelectorAll(".contact p");
+contactInfo[0].textContent = siteContent.contact["address"];
+contactInfo[1].textContent = siteContent.contact["phone"];
+contactInfo[2].textContent = siteContent.contact["email"];
+
+contactInfo[0].innerHTML = "123 Way 456 Street<br> Somewhere, USA"
+
+// Copyright ----------
+
+const footerCopyright = document.querySelector("footer p");
+footerCopyright.textContent = siteContent.footer["copyright"];
+
+// I'm so proud of myself, it's silly. I had help in the beginning but everything else, I figured out on my own!!!
