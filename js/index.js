@@ -49,7 +49,7 @@ headerImg.setAttribute('src', siteContent["cta"]["img-src"])
 let mainContentImg = document.getElementById("middle-img");
 mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
-// NAV
+// NAV ----------------
 
 let headerLinks = document.querySelectorAll("nav a");
 headerLinks[0].textContent = siteContent.nav["nav-item-1"]
@@ -59,9 +59,15 @@ headerLinks[3].textContent = siteContent.nav["nav-item-4"]
 headerLinks[4].textContent = siteContent.nav["nav-item-5"]
 headerLinks[5].textContent = siteContent.nav["nav-item-6"]
 
+// CTA ----------------
+// Header
 
-// let headerLinks = document.querySelectorAll("a");
-// headerLinks.textContent = siteContent["nav"]["a"];
+let mainHeader = document.querySelector(".cta-text h1");
+mainHeader.textContent = siteContent.cta.h1;
 
-// let headerLinks = siteContent.getAttribute("nav a");
-// console.log(headerLinks);
+// Button
+
+let mainButton = document.querySelector(".cta-text button");
+mainButton.textContent = siteContent.cta.button;
+
+
