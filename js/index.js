@@ -51,8 +51,17 @@ mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]
 
 // NAV
 
-// let headerLinks = document.querySelectorAll("nav");
-// console.log(headerLinks);
+let headerLinks = document.querySelectorAll("nav a");
+headerLinks[0].textContent = siteContent.nav["nav-item-1"]
+headerLinks[1].textContent = siteContent.nav["nav-item-2"]
+headerLinks[2].textContent = siteContent.nav["nav-item-3"]
+headerLinks[3].textContent = siteContent.nav["nav-item-4"]
+headerLinks[4].textContent = siteContent.nav["nav-item-5"]
+headerLinks[5].textContent = siteContent.nav["nav-item-6"]
 
-let headerLinks = document.querySelectorAll("a");
-headerLinks.textContent = siteContent["nav"]["a"];
+
+// let headerLinks = document.querySelectorAll("a");
+// headerLinks.textContent = siteContent["nav"]["a"];
+
+// let headerLinks = siteContent.getAttribute("nav a");
+// console.log(headerLinks);
